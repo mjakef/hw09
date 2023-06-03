@@ -1,0 +1,156 @@
+/*
+  Name:   Michael Fisher
+  Class:  CS-135I-01
+  Date:   05/21/23
+*/
+html {
+  background: linear-gradient(to bottom, #f0f8ff, #000000);
+  min-height: 100vh;
+}
+body {
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  padding: 2em;
+  border-radius: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  max-width: 1200px;
+}
+.collapse,
+.navbar {
+  background: linear-gradient(to right, #69167c, #d29edf);
+  padding: 4px;
+  width: 100vw;
+  z-index: 9999;
+}
+.skewed-dropdown .dropdown-item:hover {
+  background: radial-gradient(#69167c, #5d1a6c);
+  color: #f0f8ff;
+}
+.skew-nav {
+  float: right;
+}
+.nav-item {
+  float: right;
+}
+.nav-link {
+  transform: skew(-15deg);
+  background-color: #f0f8ff;
+  margin: 4px;
+}
+.nav-link:hover {
+  background: radial-gradient(#69167c, #5d1a6c);
+  color: #f0f8ff;
+}
+.skewed-dropdown {
+  transform: skew(-15deg);
+  background: transparent;
+  border: 0px;
+}
+.dropdown-item {
+  background-color: #f0f8ff;
+  margin: 8px;
+  transform: skew(30deg);
+}
+.skew-text {
+  transform: skew(20deg);
+}
+.skew-text-drop {
+  transform: skew(-20deg);
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.logo {
+  margin-right: 3em;
+}
+h1,
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+p {
+  display: block;
+  color: white;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 1em;
+}
+#firstP {
+  float: left;
+  width: 65%;
+}
+#secP {
+  float: right;
+  width: 55%;
+}
+#thirdP {
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img {
+  clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+  border: solid 3px #69167c;
+}
+#img1 {
+  width: 90%;
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img2 {
+  width: 28%;
+  max-width: 250px;
+  float: right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img3 {
+  width: 40%;
+  max-width: 350px;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-carousel {
+  position: relative;
+  background-image: url(images/fitness1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  max-width: 1150px;
+  margin: 150px auto;
+}
+.carousel-indicators {
+  display: none;
+}
+.jumbotron {
+  margin-top: 4px;
+  background-color: #5d5d5d;
+  width: 30%;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 46% 100%, 0 100%, 0 40%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 46% 100%, 0 100%, 0 40%);
+  border: solid 3px #69167c;
+}
+.jumbotron .btn {
+  background-color: #f0f8ff;
+  border: solid 3px #69167c;
+  color: #000;
+  border-radius: 0%;
+  margin: 0 0 4px 4px;
+}
